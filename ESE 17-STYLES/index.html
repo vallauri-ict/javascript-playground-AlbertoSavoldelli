@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css"/>
+        <script type="application/javascript" src="index.js"></script>
+        <title>getAttribute</title>
+    </head>
+    <body>
+        <div id="wrapper">
+			<div id="titolo">Gestione attributi HTML e di stile</div>
+            <br />
+            <!-- aggiungiamo l'onclick dinamicamente -->
+            <input type="button" id="btnColore" value="Cambia colore" onclick="changeColor()"/>
+            <br />
+            <input type="text" id="txtSize" size="1" />
+            <input type="button" id="btnDimensione" value="Cambia dimensione" onclick="changeSize()"/>
+            <br />
+            <input type="button" id="btnSfondo" value="Cambia sfondo" onclick="changeBackground()"/>
+            <input type="button" id="btnBordo" value="Cambia bordo" onclick="changeBorder()"/>
+            <br />
+            <input type="button" id="btnImg1" value="img1" onclick="image(1)"/>
+            <input type="button" id="btnImg2" value="img2" onclick="image(2)"/>
+            <input type="button" id="btnImg3" value="img3" onclick="image(3)"/>
+            <br />
+            <img id="imgBox" />
+            <br />
+            <input type="button" id="btnClear" value="Pulisci" onclick="cleanImage()"/>
+        </div>
+    </body>
+</html>

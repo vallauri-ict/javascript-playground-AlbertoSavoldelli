@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+	<title>Calcolatrice</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="index.css"/>
+    <script type="application/javascript" src="index.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+	 <div> 
+	    <h1> CALCOLATRICE </h1>
+        <input type="text" value="" id="txtDisplay" readonly />
+        <br/>
+        <input type="button" value="7" name="btnNum" onclick="n(7)"/>
+        <input type="button" value="8" name="btnNum" onclick="n(8)"/>
+        <input type="button" value="9" name="btnNum" onclick="n(9)"/>
+        <input type="button" value="/" name="btnOperatore" onclick="op('/')"/>
+        <br/>
+        <input type="button" value="4" name="btnNum" onclick="n(4)"/>
+        <input type="button" value="5" name="btnNum" onclick="n(5)"/>
+        <input type="button" value="6" name="btnNum" onclick="n(6)"/>
+        <input type="button" value="*" name="btnOperatore" onclick="op('*')"/>
+        <br/>
+        <input type="button" value="1" name="btnNum" onclick="n(1)"/>
+        <input type="button" value="2" name="btnNum" onclick="n(2)"/>
+        <input type="button" value="3" name="btnNum" onclick="n(3)"/>
+        <input type="button" value="-" name="btnOperatore" onclick="op('-')"/>
+        <br/>
+        <input type="button" value="0" name="btnNum" onclick="n(0)"/>
+        <input type="button" value="." name="btnNum" onclick="n('.')"/>
+        <input type="button" value="C" onclick="reset()" id="btnReset"/>
+        <input type="button" value="+" name="btnOperatore" onclick="op('+')"/>
+        <br/>
+        <input type="button" value="=" onclick="calcola()" id="btnRis" />
+     </div>
+  </div>
+</body>
+</html>
